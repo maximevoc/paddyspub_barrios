@@ -30,11 +30,11 @@ body#inicio {
   ;
 }
 
-header {
+nav {
   grid-area: header;
 }
 
-header h1 {
+nav h1 {
   text-align: center;
   padding-top: 10px;
   margin-bottom: 0;
@@ -42,7 +42,7 @@ header h1 {
   background-color: rgba(255, 247, 247, 0.671);
 }
 
-header ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,12 +50,12 @@ header ul {
   background-color: rgba(255, 247, 247, 0.671);
 }
 
-header ul li {
+nav ul li {
   display: inline-block;
 
 }
 
-header ul li a {
+nav ul li a {
   display: block;
   color: black;
   text-align: center;
@@ -619,6 +619,32 @@ form {
   margin: 10px;
 }
 
+
+/*------tienda---------*/
+
+
+.titulo-tienda {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.txt-tienda {
+  text-align: center;
+}
+
+
+.container {
+  display:grid;
+  justify-content: center;
+}
+
+.row {
+  padding: 10px;
+  margin: 10px;
+
+}
+
 /*menu desplegable*/
 
 label #boton,
@@ -694,7 +720,7 @@ label #cancelar {
     display: block;
   }
 
-  header ul {
+  nav ul {
 
     position: fixed;
     width: 100%;
@@ -705,14 +731,14 @@ label #cancelar {
     transition: all .5s;
   }
 
-  header ul li {
+  nav ul li {
     display: block;
     margin: 20px 0;
 
 
   }
 
-  header ul li a {
+  nav ul li a {
     font-size: 17px;
   }
 
@@ -900,7 +926,7 @@ label #cancelar {
   /*--------------------*/
 
 
-  header ul li a {
+  nav ul li a {
     text-transform: capitalize;
     font-size: small;
   }
