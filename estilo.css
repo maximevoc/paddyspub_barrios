@@ -1,1056 +1,130 @@
-/*estilo del index*/
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
+    padding: 0;
+    margin: 0;
+    
 }
 
 body {
-  background-image: url(assets/img/fondopagina3.jpg);
-  background-size: cover;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
-
-body#inicio {
-  display: grid;
-  grid-template-columns: auto auto auto 25%;
-  grid-template-rows: 10% 40% 40% 10%;
-  grid-template-areas:
-    "header header header header"
-    "presentacion presentacion imagenes imagenes"
-    "presentacion presentacion imagenes imagenes"
-    "presentacion presentacion imagenes imagenes"
-    "footer footer footer footer"
-  ;
-}
-
-nav {
-  grid-area: header;
-}
-
-nav h1 {
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 0;
-  font-size: 50px;
-  background-color: rgba(255, 247, 247, 0.671);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(255, 247, 247, 0.671);
-}
-
-nav ul li {
-  display: inline-block;
-
-}
-
-nav ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: large;
-  text-transform: uppercase;
-
-}
-
-li a:hover {
-  background-color: rgba(161, 157, 157, 0.671);
-}
-
-.presentacion {
-  grid-area: presentacion;
-  font-family: "Sofia", sans-serif;
-  font-weight: 500;
-  font-size: xx-large;
-  grid-area: presentacion;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: 0;
-  flex-direction: column;
-  padding: 10px;
-  margin-top: 10px;
-  color: black;
-
-
-
-}
-
-.imagenes--portada {
-  grid-area: imagenes;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: auto;
-  flex-direction: column;
-}
-
-.imagenes--portada ul li {
-  list-style-type: none;
-
-}
-
-.imagenes--portada ul li p {
-  font-size: large;
-}
-
-.imagenes--portada ul li:hover {
-  filter: opacity(0.8);
-  transition: .2s;
-  cursor: pointer;
-}
-
-footer {
-  grid-area: footer;
-  background-color: white;
-  position: sticky;
-  top: 100%;
-  text-align: center;
-  height: 80px;
-}
-
-footer ul li {
-  display: inline-block;
-
-}
-
-
-
-
-
-
-/*aca termina el index*/
-
-
-/*nosotros*/
-
-body#nosotros {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10% 40% 40% 10%;
-  grid-template-areas:
-    "header header header header"
-    "txt-historia txt-historia txt-historia txt-historia"
-    "img-nosotros img-nosotros img-nosotros img-nosotros"
-    "img-nosotros img-nosotros img-nosotros img-nosotros"
-    "footer footer footer footer"
-  ;
-  justify-content: center;
-  align-items: center;
-}
-
-.texto-historia {
-  font-family: "Sofia", sans-serif;
-  font-weight: 500;
-  font-size: xx-large;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: 0;
-  flex-direction: column;
-  padding: 10px;
-  margin-top: 10px;
-  color: rgb(8, 8, 8);
-
-}
-
-.texto-historia {
-  grid-area: txt-historia;
-}
-
-.imagenes-nosotros {
-  grid-area: img-nosotros;
-}
-
-.imagenes-nosotros {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-
-}
-
-.imagenes-nosotros img {
-  padding: 10px;
-  width: 100%;
-  height: auto;
-
-}
-
-/*menus*/
-
-body#menus {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10% 40% 40% 10%;
-  grid-template-areas:
-    "header header header header"
-    "texto-menus texto-menus texto-menus texto-menus"
-    "imagenes-menu imagenes-menu imagenes-menu imagenes-menu"
-    "imagenes-menu imagenes-menu imagenes-menu imagenes-menu"
-    "footer footer footer footer"
-  ;
-  justify-content: center;
-  align-items: center;
-}
-
-body#menus2 {
-
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header "
-    "texto-menu"
-    "img-menu"
-    "footer"
-  ;
-  justify-content: center;
-  align-items: center;
-}
-
-.texto-menus {
-  grid-area: texto-menus;
-}
-
-.texto-menus {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  font-size: large;
-  font-family: "Sofia", sans-serif;
-  font-weight: 500;
-  color: black;
-
-}
-
-.imagenes-menus {
-  grid-area: imagenes-menu;
-}
-
-.imagenes-menus {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.imagenes-menus ol {
-  list-style-type: none;
-}
-
-.imagenes-menus img {
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-}
-
-/*---submenus---*/
-
-.texto-menu-vinos {
-  grid-area: texto-menu;
-  text-align: center;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 300;
-  margin: 10px;
-
-}
-
-.menu-vinos {
-  grid-area: img-menu;
-}
-
-.menu-vinos img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.texto-menu-almuerzo {
-  grid-area: texto-menu;
-  text-align: center;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 300;
-  margin: 10px;
-
-}
-
-.menu-almuerzo {
-  grid-area: img-menu;
-}
-
-.menu-almuerzo img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.texto-menu-cena {
-  grid-area: texto-menu;
-  text-align: center;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 300;
-  margin: 10px;
-
-}
-
-.menu-cena {
-  grid-area: img-menu;
-}
-
-.menu-cena img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.texto-menu-cocteles {
-  grid-area: texto-menu;
-  text-align: center;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 300;
-  margin: 10px;
-
-}
-
-.menu-cocteles {
-  grid-area: img-menu;
-}
-
-.menu-cocteles img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.texto-menu-desayuno {
-  grid-area: texto-menu;
-  text-align: center;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 300;
-  margin: 10px;
-
-}
-
-.menu-desayuno {
-  grid-area: img-menu;
-}
-
-.menu-desayuno img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.texto-menu-postres {
-  grid-area: texto-menu;
-  text-align: center;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 300;
-  margin: 10px;
-
-}
-
-.menu-postres {
-  grid-area: img-menu;
-}
-
-.menu-postres img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-
-
-/*galeria de fotos*/
-
-
-.titulo-galeria {
-  text-align: center;
-  font-size: 4em;
-}
-
-.galeria-fotos ul li {
-  list-style: none;
-  padding: 0;
-  margin: 10px;
-}
 
-.galeria-fotos {
-  position: relative;
-  padding: 0;
-  margin: 10px;
-
-}
-
-.galeria-fotos ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-  grid-auto-flow: dense;
-  grid-gap: 2px;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.galeria-fotos ul li {
-  position: relative;
-}
-
-.galeria-fotos ul li:nth-child(1) {
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.galeria-fotos ul li:nth-child(2) {
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.galeria-fotos ul li:nth-child(3) {
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.galeria-fotos ul li:nth-child(4) {
-  grid-row: span 2;
-  grid-column: span 6;
-}
-
-.galeria-fotos ul li:nth-child(5) {
-  grid-row: span 2;
-  grid-column: span 3;
-}
-
-.galeria-fotos ul li:nth-child(6) {
-  grid-row: span 3;
-  grid-column: span 4;
-}
-
-.galeria-fotos ul li:nth-child(7) {
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.galeria-fotos ul li:nth-child(8) {
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.galeria-fotos ul li:nth-child(9) {
-  grid-row: span 3;
-  grid-column: span 4;
+    height: 100vh;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
 }
 
-.galeria-fotos ul li:nth-child(10) {
-  grid-row: span 2;
-  grid-column: span 5;
+.texto-inicio {
+    font-size: larger;
+    color: black;
+    padding: 10px;
+    margin: 10px;
 }
 
-.galeria-fotos ul li:nth-child(11) {
-  grid-row: span 2;
-  grid-column: span 4;
-}
+.mapa-ubi {
 
-.galeria-fotos ul li:nth-child(12) {
-  grid-row: span 3;
-  grid-column: span 4;
-}
+    padding: 10px;
+    border: 10px;
+    display: flex;
+    justify-content: center;
 
-.galeria-fotos ul li:nth-child(13) {
-  grid-row: span 2;
-  grid-column: span 5;
 }
 
-.galeria-fotos ul li:nth-child(14) {
-  grid-row: span 2;
-  grid-column: span 4;
-}
 
-.galeria-fotos ul li:nth-child(15) {
-  grid-row: span 2;
-  grid-column: span 5;
-}
+/*-----nosotros-----*/
 
-.galeria-fotos ul img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.texto-nosotros {
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    justify-content: center;
 }
 
-.galeria-fotos ul li:hover {
-  filter: opacity(0.8);
-  transition: .2s;
-  cursor: pointer;
+.titulo-historia {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
 }
-
-
-
-
-
-/*formularios*/
-
-.formulario--contacto {
 
-  background-color: #fff;
-  width: 500px;
-  box-shadow: 0 0 20px 0 #999;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10%;
-  margin-bottom: 20px;
-  padding: 10px;
-  margin-left: 50%;
-  margin: auto;
 
-}
-
-form {
-  margin: 35px;
-}
+/*-----galeria-----*/
 
-.entradadetexto {
-  width: 400px;
-  height: 40px;
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #777;
-  border-radius: 14px;
-  outline: none;
+img {
+    max-width: 100%;
 }
 
-.areadetexto {
+.gallery {
+    padding: 80px 0;
 
-  height: 150px;
-  padding: 10px;
-  width: 400px;
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #777;
-  border-radius: 14px;
-  outline: none;
 }
-
-.boton1 {
-  border-radius: 20px;
-  color: #fff;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: black;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-}
-
-/*reservas*/
 
-.texto-reservas {
-  font-family: "Sofia", sans-serif;
-  font-weight: 500;
-  font-size: larger;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
+.gallery img {
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 
-/*contacto*/
+/*-----contacto-----*/
 
-.texto-contacto {
-  margin: 10px;
-  padding: 10px;
-  font-family: "Sofia", sans-serif;
-  font-weight: 500;
-  font-size: larger;
-  text-align: center;
-
+.titulo-form {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 20px;
 }
-
-/*eventos*/
-
 
-.texto-eventos {
-  font-family: "Sofia", sans-serif;
-  font-weight: 500;
-  font-size: larger;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
+.mb-3 {
+    text-transform: capitalize;
 }
 
 
-/*------tienda---------*/
-
-
-.titulo-tienda {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: xx-large;
-}
+/*----tienda----*/
 
 .txt-tienda {
-  text-align: center;
-}
-
-
-.container {
-  display:grid;
-  justify-content: center;
-}
-
-.row {
-  padding: 10px;
-  margin: 10px;
-
-}
-
-/*menu desplegable*/
-
-label #boton,
-label #cancelar {
-  color: #fff;
-  font-size: 30px;
-  float: right;
-  line-height: 80px;
-  margin-right: 30px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-@media (max-width:600px) {
-
-  /*---inicio---*/
-
-  body#inicio {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "presentacion "
-      "imagenes"
-      "footer"
-    ;
-  }
-
-  .presentacion {
-    grid-area: presentacion;
-    font-family: "Sofia", sans-serif;
-    font-weight: 300;
-    font-size: medium;
-    grid-area: presentacion;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
+    margin: 10px;
     padding: 10px;
-    margin-top: 10px;
-    color: black;
-  }
-
-  .imagenes--portada {
-    grid-area: imagenes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: auto;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  /*--------------------*/
-
-
-  /*menu desplagable vista mobile*/
-  .logopub {
     text-align: center;
-    padding: 5px;
-
-  }
-
-  label #boton {
-    display: block;
-  }
-
-  nav ul {
-
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 67px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 20px 0;
-
-
-  }
-
-  nav ul li a {
-    font-size: 17px;
-  }
-
-  #check:checked~ul {
-    left: 0;
-  }
-
-  #check:checked~label #boton {
-    display: none;
-  }
-
-  #check:checked~label #cancelar {
-    display: block;
-  }
-
-  /*-----------------------------*/
-
-
-  /*----nosotros----*/
-
-
-  body#nosotros {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "texto-historia"
-      "imagenes-nosotros"
-      "footer"
-    ;
-  }
-
-  .texto-historia {
-    grid-area: texto-historia;
-    text-align: center;
-    font-size: medium;
-    padding: 10px;
-
-  }
-
-  .imagenes-nosotros {
-    grid-area: imagenes-nosotros;
-    padding: 10px;
-  }
-
-  /*---menus---*/
-
-  body#menus {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "texto-menus"
-      "imagenes-menus"
-      "footer"
-    ;
-  }
-
-  .texto-menus {
-    grid-area: texto-menus;
-    text-align: center;
-    font-size: medium;
-    padding: 10px;
-  }
-
-  .imagenes-menus {
-    grid-area: imagenes-menus;
-    padding: 10px;
-  }
-
-  /*--submenus--*/
-
-  body#menus2 {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "texto-menu"
-      "img-menu"
-      "footer"
-    ;
-    justify-content: center;
-    align-items: center;
-  }
-
-.texto-menu-almuerzo .texto-menu-cena .texto-menu-cocteles .texto-menu-desayuno .texto-menu-postres .texto-menu-vinos {
-  grid-area: texto-menu;
-  text-align: center;
-  font-size: medium;
-  padding: 10px;
-}
-
-.menu-almuerzo .menu-cena .menu-cocteles .menu-desayuno .menu-postres .menu-vinos {
-  grid-area: img-menu;
-  padding: 10px;
+    font-size: large;
 
 }
 
-  .texto-menus {
-    grid-area: texto-menus;
-    text-align: center;
-    font-size: medium;
-    padding: 10px;
-  }
-
-  .imagenes-menus {
-    grid-area: imagenes-menus;
-    padding: 10px;
-  }
-
-
-
-  /*------------------------*/
-
-  /*---galeria---*/
-
-  body#galeria {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "galeria-fotos"
-      "footer"
-    ;
-  }
-
-  .galeria-fotos {
-    grid-area: galeria-fotos;
-  }
-}
-
-@media (max-width:768px) {
-
-  /*---inicio---*/
-
-  body#inicio {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "presentacion "
-      "imagenes"
-      "footer"
-    ;
-  }
-
-  .presentacion {
-    grid-area: presentacion;
-    font-family: "Sofia", sans-serif;
-    font-weight: 300;
-    font-size: medium;
-    grid-area: presentacion;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 10px;
-    color: black;
-  }
-
-  .imagenes--portada {
-    grid-area: imagenes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: auto;
-    flex-direction: column;
-    padding: 10px;
-    
-  }
-
-  /*--------------------*/
-
-
-  nav ul li a {
+.txt-tienda h1 {
     text-transform: capitalize;
-    font-size: small;
-  }
-
-  /*-----------------------------*/
-
-
-  /*----nosotros----*/
-
-
-  body#nosotros {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "texto-historia"
-      "imagenes-nosotros"
-      "footer"
-    ;
-  }
-
-  .texto-historia {
-    grid-area: texto-historia;
-    text-align: center;
-    font-size: medium;
-    padding: 10px;
-
-  }
-
-  .imagenes-nosotros {
-    grid-area: imagenes-nosotros;
-    padding: 10px;
-  }
-
-  /*---menus---*/
-
-  body#menus {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "texto-menus"
-      "imagenes-menus"
-      "footer"
-    ;
-  }
-
-  .texto-menus {
-    grid-area: texto-menus;
-    text-align: center;
-    font-size: medium;
-    padding: 10px;
-  }
-
-  .imagenes-menus {
-    grid-area: imagenes-menus;
-    padding: 10px;
-  }
-
-  /*--submenus--*/
-
-  body#menus2 {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "texto-menu"
-      "img-menu"
-      "footer"
-    ;
-    justify-content: center;
-    align-items: center;
-  }
-
-.texto-menu-almuerzo .texto-menu-cena .texto-menu-cocteles .texto-menu-desayuno .texto-menu-postres .texto-menu-vinos {
-  grid-area: texto-menu;
-  text-align: center;
-  font-size: medium;
-  padding: 10px;
-}
-
-.menu-almuerzo .menu-cena .menu-cocteles .menu-desayuno .menu-postres .menu-vinos {
-  grid-area: img-menu;
-  padding: 10px;
 
 }
 
-  .texto-menus {
-    grid-area: texto-menus;
+
+/*-----footer-----*/
+.fa {
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
     text-align: center;
-    font-size: medium;
-    padding: 10px;
-  }
-
-  .imagenes-menus {
-    grid-area: imagenes-menus;
-    padding: 10px;
-  }
-
-
-
-  /*------------------------*/
-
-  /*---galeria---*/
-
-  body#galeria {
-    background-image: linear-gradient(rgb(118, 236, 118), white);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header "
-      "galeria-fotos"
-      "footer"
-    ;
-  }
-
-  .galeria-fotos {
-    grid-area: galeria-fotos;
-  }
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid black .01px;
 }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+   
+    color: black;
+}
+
+.fa-twitter {
+    
+    color: black;
+}
+
+.fa-instagram {
+    color: black;
+}
+
+.fa-youtube {
+    color: black;
+}
+

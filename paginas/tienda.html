@@ -1,94 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Tienda</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TIENDA</title>
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-bars" id="boton"></i>
-            <i class="fas fa-times" id="cancelar"></i>
-        </label>
-        <h1 class="logopub">Paddy's Pub</h1>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="menus.html">MENUS</a></li>
-            <li><a href="galeria.html">GALERIA</a></li>
-            <li><a href="reservas.html">RESERVAS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li><a href="eventos.html">EVENTOS</a></li>
-            <li><a href="tienda.html">TIENDA</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Paddy's Pub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MENUS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">DESAYUNO</a></li>
+                            <li><a class="dropdown-item" href="#">ALMUERZO</a></li>
+                            <li><a class="dropdown-item" href="#">CENA</a></li>
+                            <li><a class="dropdown-item" href="#">POSTRES</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">COCTELES</a></li>
+                            <li><a class="dropdown-item" href="#">VINOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/tienda.html">TIENDA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <h2 class="titulo-tienda">Paddy's Pub</h2>
-    <p class="txt-tienda">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consequatur saepe eos, corporis
-        labore optio
-        provident suscipit nihil quibusdam neque pariatur odit obcaecati nesciunt facilis dolore! Dicta minus provident
-        enim?</p>
+
+    <section class="txt-tienda">
+        <h1>tienda</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut itaque expedita quasi dolorem sed velit
+            quibusdam libero accusantium, quidem dicta possimus distinctio facere commodi culpa! Veniam dolore rerum
+            optio commodi.
+        </p>
+    </section>
 
     <div class="container">
-        <div class="row g-3">
+        <div class="row g-3 ">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="../assets/img/tienda/bushmills.jpg" alt="bushmill whiskey" class="card-img-top">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/tienda/bushmills.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Bushmill 1995</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">$49.99</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, neque
-                            saepe fuga
-                            voluptates molestiae vero suscipit, sapiente praesentium accusamus beatae porro
-                            eos! Ipsum sapiente minus temporibus numquam. Itaque, totam. Eos.</p>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i>agregar al
-                            carrito</button>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="far fa-heart"></i></button>
+                        <p class="card-text">Aca describiria lo rico que es el whiskey, pero como no se nada de whiskeys
+                            escribo esto :) <br><br>$99.99
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="../assets/img/tienda/clancolla.jpg" alt="clancolla whiskey" class="card-img-top">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/tienda/clancolla.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Clan Colla Single Malt</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">$99.99</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, neque
-                            saepe fuga
-                            voluptates molestiae vero suscipit, sapiente praesentium accusamus beatae porro
-                            eos! Ipsum sapiente minus temporibus numquam. Itaque, totam. Eos.</p>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i>agregar al
-                            carrito</button>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="far fa-heart"></i></button>
+                        <p class="card-text">Aca describiria lo rico que es el whiskey, pero como no se nada de whiskeys
+                            escribo esto :) <br><br>$99.99</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="../assets/img/tienda/telling.jpg" alt="telling whiskey" class="card-img-top">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/tienda/telling.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Telling Single Malt</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">$89.99</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, neque
-                            saepe fuga
-                            voluptates molestiae vero suscipit, sapiente praesentium accusamus beatae porro
-                            eos! Ipsum sapiente minus temporibus numquam. Itaque, totam. Eos.</p>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i>agregar al
-                            carrito</button>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="far fa-heart"></i></button>
+                        <h5 class="card-title">Teeling Single Malt</h5>
+                        <p class="card-text">Aca describiria lo rico que es el whiskey, pero como no se nada de whiskeys
+                            escribo esto :) <br><br>$99.99</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
             </div>
@@ -96,27 +107,27 @@
     </div>
 
 
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+            <span class="text-muted">&copy; 2021 PADDY'S PUB</span>
+        </div>
 
-
-    <script src="https://kit.fontawesome.com/a369bbff09.js"></script>
-    <footer>
-        <p>nuestras redes sociales</p>
-        <ul>
-
-            <li><a target="_blank" href="https://www.instagram.com"><img src="../assets/iconos/instagram.png"
-                        alt="instagram"></a></li>
-            <li><a target="_blank" href="https://www.facebook.com"><img src="../assets/iconos/facebook.png"
-                        alt="facebook"></a></li>
-            <li><a target="_blank" href="https://www.youtube.com"><img src="../assets/iconos/youtube.png"
-                        alt="youtube"></a></li>
-            <li><a target="_blank" href="https://www.tiktok.com"><img src="../assets/iconos/tiktok.png"
-                        alt="tiktok"></a>
-            </li>
-            <li><a target="_blank" href="https://www.twitter.com"><img src="../assets/iconos/twitter.png"
-                        alt="twitter"></a></li>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="#" class="fa fa-facebook"></a></li>
+            <li class="ms-3"><a href="#" class="fa fa-twitter"></a></li>
+            <li class="ms-3"><a href="#" class="fa fa-instagram"></a></li>
+            <li class="ms-3"><a href="#" class="fa fa-youtube"></a></li>
         </ul>
-        <p>Paddy's Pub todos los derechos reservados 2022 </p>
     </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

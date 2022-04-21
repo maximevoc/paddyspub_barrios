@@ -1,97 +1,172 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>Paddy's Pub</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PADDY'S PUB</title>
 </head>
 
-<body id="inicio">
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-bars" id="boton"></i>
-            <i class="fas fa-times" id="cancelar"></i>
-        </label>
-        <h1 class="logopub">Paddy's Pub</h1>
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="paginas/nosotros.html">NOSOTROS</a></li>
-            <li><a href="paginas/menus.html">MENUS</a></li>
-            <li><a href="paginas/galeria.html">GALERIA</a></li>
-            <li><a href="paginas/reservas.html">RESERVAS</a></li>
-            <li><a href="paginas/contacto.html">CONTACTO</a></li>
-            <li><a href="paginas/eventos.html">EVENTOS</a></li>
-            <li><a href="paginas/tienda.html">TIENDA</a></li>
-        </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Paddy's Pub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MENUS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">DESAYUNO</a></li>
+                            <li><a class="dropdown-item" href="#">ALMUERZO</a></li>
+                            <li><a class="dropdown-item" href="#">CENA</a></li>
+                            <li><a class="dropdown-item" href="#">POSTRES</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">COCTELES</a></li>
+                            <li><a class="dropdown-item" href="#">VINOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/tienda.html">TIENDA</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
     </nav>
-    <div class="presentacion">
-        <h2>Paddy's Pub</h2>
 
-        <p>Nuestro elegante bar irlandés tradicional genuino del siglo XVI es famoso por sus paredes de piedra cortada,
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/carrousel/botella.jpg" class="d-block w-100"
+                    alt="whiskey de la semana">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Whiskey de la semana</h5>
+                    <p>Midleton Very Rare, producido con whiskies de malta y grano especialmente seleccionados madurados
+                        en barriles de ex-bourbon ligeramente carbonizados, elegidos por el maestro destilador Brian
+                        Nation.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/carrousel/cocktail.jpg" class="d-block w-100"
+                    alt="coctel de la semana">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Martini de lavanda</h5>
+                    <p>El Martini de lavanda es un martini rápido y fácil, que tiene un aspecto tan delicioso como su
+                        sabor.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/carrousel/sanpatricio.jpg" class="d-block w-100"
+                    alt="evento de la semana">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Evento de la semana</h5>
+                    <p>Si quieres celebrar San Patricio en Dublin y no tienes planes, ven a paddy's Pub. Te encontrarás
+                        con cerveza típica de Dublín y buena
+                        comida.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr>
+    <section>
+        <p class="texto-inicio">
+            Nuestro elegante bar irlandés tradicional genuino del siglo XVI es famoso por sus paredes de piedra cortada,
             pisos de losas de piedra y fuegos de césped. Nuestro amable personal es famoso por la calidez de su
-            bienvenida, su hospitalidad y su excelente servicio. No es de extrañar entonces que Paddy's Pub haya
-            sido durante mucho tiempo un favorito entre los lugareños y visitantes por igual.
-            <br>
+            bienvenida, su hospitalidad y su excelente servicio. No es de extrañar entonces que Paddy's Pub haya sido
+            durante mucho tiempo un favorito entre los lugareños y visitantes por igual.
             El Paddy's Pub Tavern ha recibido a lo largo de los años a muchos personajes famosos a través de sus
-            puertas.
-            La princesa Grace y el príncipe Rainiero de Mónaco, Ted Kennedy, Garth Brooks, Neil Diamond, Katherine
-            Hepburn, John Wayne, Kate Beckinsdale, Pierse Brosnan, las estrellas de “Jackass”, por nombrar solo algunos.
-            Paddy's Pub es un "must do" en su visita a Dublín.
-            <br>
-            El escenario de Paddy's Pub también ha sido adornado por muchas caras famosas. The Paddy's Pub era un
-            lugar habitual para The Dubliners cuando estaban comenzando. The Chieftains, Planxty, Christy Moore y Johnny
-            McEvoy también actuaron regularmente en The Paddy's Pub. Más recientemente, TG4 filmó un especial de
-            Navidad con Imelda May en The Paddy's Pub.
-            <br>
+            puertas. La princesa Grace y el príncipe Rainiero de Mónaco, Ted Kennedy, Garth Brooks, Neil Diamond,
+            Katherine Hepburn, John Wayne, Kate Beckinsdale, Pierse Brosnan, las estrellas de “Jackass”, por nombrar
+            solo algunos. Paddy's Pub es un "must do" en su visita a Dublín.
+            El escenario de Paddy's Pub también ha sido adornado por muchas caras famosas. The Paddy's Pub era un lugar
+            habitual para The Dubliners cuando estaban comenzando. The Chieftains, Planxty, Christy Moore y Johnny
+            McEvoy también actuaron regularmente en The Paddy's Pub. Más recientemente, TG4 filmó un especial de Navidad
+            con Imelda May en The Paddy's Pub.
             El ambiente cálido y acogedor estilo club de The Paddy's Pub, nuestras magníficas ofertas de alimentos y
             bebidas y la famosa hospitalidad lo están esperando.
-
         </p>
+    </section>
+
+    <hr>
+
+    <div class="mapa-ubi">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8784224630454!2d-6.264679999999999!3d53.345432499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dubl%C3%ADn!5e0!3m2!1ses-419!2sie!4v1650136901529!5m2!1ses-419!2sie"
+            width="600" height="450" style="border:10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>
-    <div class="imagenes--portada">
-        <ul>
-            <li>
-                <p>Whiskey de la semana: Middleton very rare</p><img src="assets/img/botella.jpg" alt="whiskey del mes">
-            </li>
-            <li>
-                <p>Cocktail de la semana: Planter's Fizz</p><img src="assets/img/cocktail.jpg"
-                    alt="cocktail de la semana">
-            </li>
-            <li>
-                <p>Plato de la semana: Lobster Pizza</p><img src="assets/img/comida.jpg" alt="plato de la semana">
-            </li>
-            <li>
-                <p>Evento de la semana: Fiesta de San Patricio</p><img src="assets/img/sanpatricio.jpg"
-                    alt="evento de la semana">
-            </li>
-        </ul>
-    </div>
-    <script src="https://kit.fontawesome.com/a369bbff09.js"></script>
-    <footer>
-        <p>NUESTRAS REDES SOCIALES</p>
-        <ul>
 
-            <li><a target="_blank" href="https://www.instagram.com"><img src="assets/iconos/instagram.png"
-                        alt="instagram"></a></li>
-            <li><a target="_blank" href="https://www.facebook.com"><img src="assets/iconos/facebook.png"
-                        alt="facebook"></a></li>
-            <li><a target="_blank" href="https://www.youtube.com"><img src="assets/iconos/youtube.png"
-                        alt="youtube"></a></li>
-            <li><a target="_blank" href="https://www.tiktok.com"><img src="assets/iconos/tiktok.png" alt="tiktok"></a>
-            </li>
-            <li><a target="_blank" href="https://www.twitter.com"><img src="assets/iconos/twitter.png"
-                        alt="twitter"></a></li>
+    
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+            <span class="text-muted">&copy; 2021 PADDY'S PUB</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="#" class="fa fa-facebook"></a></li>
+            <li class="ms-3"><a href="#" class="fa fa-twitter"></a></li>
+            <li class="ms-3"><a href="#" class="fa fa-instagram"></a></li>
+            <li class="ms-3"><a href="#" class="fa fa-youtube"></a></li>
         </ul>
-        <p>Paddy's Pub todos los derechos reservados 2022 </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+
 </body>
 
 </html>
