@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e7eff9;
+background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+    
+
+
+}
+
+
+.texto-inicio {
+    font-size: 1.5em;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.newsletter {
+    padding: 80px 0;
+    background: #f2f2f2;
+
+    .content {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        .btn {
+            min-height: 50px;
+            border-radius: 0;
+            background: #243c4f;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #243c4f;
+            margin-bottom: 40px;
+        }
+    }
+
+    .form-control {
+        height: 50px;
+        border-color: #ffffff;
+        border-radius: 0;
+
+        &:focus {
+            box-shadow: none;
+            border: 2px solid #243c4f;
+        }
+    }
+}
+
+.ubicacion-txt {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin-top: 10%;
+  
+}
+
+.ubicacion {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+/*-----nosotros-----*/
+
+.texto-nosotros {
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+}
+
+.titulo-historia {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*-----galeria-----*/
+
+.gallery {
+    padding: 80px 0;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+}
+
+
+
+
+/*-----contacto-----*/
+
+.titulo-form {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 20px;
+}
+
+.mb-3 {
+    text-transform: capitalize;
+}
+
+
+/*----tienda----*/
+
+.txt-tienda {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+
+    h1 {
+        text-transform: capitalize;
+    }
+
+}
+
+
+
+/*-----footer-----*/
+.fa {
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid black .01px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+
+.fa-facebook {
+
+    color: black;
+}
+
+.fa-twitter {
+
+    color: black;
+}
+
+.fa-instagram {
+    color: black;
+}
+
+.fa-youtube {
+    color: black;
+}
+
+
+/*------menus-------*/
+
+.menu-texto {
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        font-size: 3em;
+        font-family: 'Merriweather', serif;
+        color: black;
+
+    }
+
+    p {
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1em;
+    }
+}
+
+.menu-imagenes {
+    align-items: center;
+
+    ;
+
+    h2 {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    hr {
+        padding: 1px;
+    }
+
+
+}

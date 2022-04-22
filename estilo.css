@@ -1,130 +1,198 @@
 * {
-    padding: 0;
-    margin: 0;
-    
+  margin: 0;
+  padding: 0;
 }
 
 body {
-
-    height: 100vh;
-    background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  background-color: #e7eff9;
+  background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
 }
 
 .texto-inicio {
-    font-size: larger;
-    color: black;
-    padding: 10px;
-    margin: 10px;
+  font-size: 1.5em;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Merriweather', serif;
 }
 
-.mapa-ubi {
-
-    padding: 10px;
-    border: 10px;
-    display: flex;
-    justify-content: center;
-
+.newsletter {
+  padding: 80px 0;
+  background: #f2f2f2;
 }
 
+.newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter .content .btn {
+  min-height: 50px;
+  border-radius: 0;
+  background: #243c4f;
+  color: #fff;
+  font-weight: 600;
+}
+
+.newsletter .content h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+
+.newsletter .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+
+.newsletter .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #243c4f;
+}
+
+.ubicacion-txt {
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.ubicacion {
+  padding: 10px;
+  margin: 10px;
+}
 
 /*-----nosotros-----*/
-
 .texto-nosotros {
-    font-size: larger;
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    justify-content: center;
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Merriweather', serif;
 }
 
 .titulo-historia {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
 }
-
-
-/*-----galeria-----*/
 
 img {
-    max-width: 100%;
+  width: 100%;
 }
 
+/*-----galeria-----*/
 .gallery {
-    padding: 80px 0;
-
+  padding: 80px 0;
 }
 
 .gallery img {
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-
 /*-----contacto-----*/
-
 .titulo-form {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 20px;
-    padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 20px;
 }
 
 .mb-3 {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
-
 /*----tienda----*/
-
 .txt-tienda {
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    font-size: large;
-
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
 }
 
 .txt-tienda h1 {
-    text-transform: capitalize;
-
+  text-transform: capitalize;
 }
-
 
 /*-----footer-----*/
 .fa {
-    margin: 5px;
-    padding: 10px;
-    font-size: 30px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    border: solid black .01px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: solid black .01px;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
-   
-    color: black;
+  color: black;
 }
 
 .fa-twitter {
-    
-    color: black;
+  color: black;
 }
 
 .fa-instagram {
-    color: black;
+  color: black;
 }
 
 .fa-youtube {
-    color: black;
+  color: black;
 }
 
+/*------menus-------*/
+.menu-texto h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 3em;
+  font-family: 'Merriweather', serif;
+  color: black;
+}
+
+.menu-texto p {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1em;
+}
+
+.menu-imagenes {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-imagenes h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.menu-imagenes hr {
+  padding: 1px;
+}
+/*# sourceMappingURL=estilo.css.map */
