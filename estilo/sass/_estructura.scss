@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "variables";
 
 body {
     background-color: #e7eff9;
@@ -142,40 +139,6 @@ img {
 
 
 
-/*-----footer-----*/
-.fa {
-    margin: 5px;
-    padding: 10px;
-    font-size: 30px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    border: solid black .01px;
-
-    &:hover {
-        opacity: 0.7;
-    }
-}
-
-
-.fa-facebook {
-
-    color: black;
-}
-
-.fa-twitter {
-
-    color: black;
-}
-
-.fa-instagram {
-    color: black;
-}
-
-.fa-youtube {
-    color: black;
-}
 
 
 /*------menus-------*/
@@ -220,3 +183,111 @@ img {
 
 
 }
+/*-----footer-----*/
+
+footer {
+    background-color: #e3efe8;
+    background-image: linear-gradient(315deg, #e3efe8 0%, #96a7cf 74%);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+.boton{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: center;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+
+    &:hover{
+        width: 200px;
+      }
+
+    &:hover .icono i{
+        color: #fff;
+      }
+
+    &:nth-child(1):hover .icon{
+        background: $facebook;
+      }
+
+    &:nth-child(2):hover .icon{
+        background: $twitter;
+      }
+
+    &:nth-child(3):hover .icon{
+        background: $instagram;
+    }
+
+    &:nth-child(4):hover .icon{
+        background: $youtube;
+      }
+
+      &:nth-child(1) span{
+        color: $facebook;
+      }
+      &:nth-child(2) span{
+        color:$twitter;
+      }
+      &:nth-child(3) span{
+        color: $instagram;
+      }
+      &:nth-child(4) span{
+        color: $youtube;
+      }
+
+      .icono{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+
+        i{
+            font-size: 25px;
+            line-height: 60px;
+            transition: all 0.3s ease-out;
+          }
+
+      }
+
+      span{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+        transition: all 0.3s ease-out;
+      }
+
+  }
+
+}
+
+}
+  
+ 
+ 
+
+
+
+ 
