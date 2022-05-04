@@ -8,11 +8,18 @@ body {
   background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
 }
 
+.titulo, .titulo-historia, .titulo-form, .menu-texto h1, .menu-texto p, .menu-imagenes h2 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
 .texto-inicio {
+  margin: 10px;
+  padding: 10px;
   font-size: 1.5em;
   color: black;
-  padding: 10px;
-  margin: 10px;
   font-family: 'Merriweather', serif;
 }
 
@@ -44,7 +51,7 @@ body {
 
 .newsletter .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: #fff;
   border-radius: 0;
 }
 
@@ -63,27 +70,20 @@ body {
 }
 
 .ubicacion {
-  padding: 10px;
   margin: 10px;
+  padding: 10px;
 }
 
 /*-----nosotros-----*/
 .texto-nosotros {
-  font-size: 1.5em;
   margin: 10px;
   padding: 10px;
+  font-size: 1.5em;
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Merriweather', serif;
-}
-
-.titulo-historia {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  text-transform: uppercase;
 }
 
 img {
@@ -105,8 +105,6 @@ img {
 
 /*-----contacto-----*/
 .titulo-form {
-  text-align: center;
-  text-transform: uppercase;
   margin: 20px;
   padding: 20px;
 }
@@ -120,7 +118,7 @@ img {
   margin: 10px;
   padding: 10px;
   text-align: center;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 .txt-tienda h1 {
@@ -129,20 +127,13 @@ img {
 
 /*------menus-------*/
 .menu-texto h1 {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
   font-size: 3em;
   font-family: 'Merriweather', serif;
   color: black;
 }
 
 .menu-texto p {
-  text-align: center;
   font-family: 'Merriweather', serif;
-  padding: 10px;
-  margin: 10px;
   font-size: 1em;
 }
 
@@ -153,10 +144,6 @@ img {
 }
 
 .menu-imagenes h2 {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  text-transform: uppercase;
   color: black;
 }
 

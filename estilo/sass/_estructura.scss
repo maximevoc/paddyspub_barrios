@@ -1,19 +1,37 @@
 @import "variables";
 
+@mixin espacio($margen, $relleno) {
+    margin: $margen;
+    padding: $relleno;
+}
+
+$estilo: (
+    centrar:center,
+    fuente: 1.5em,
+    color1: black,
+    color2: #fff,
+    titulo: 3em,
+);
+
 body {
     background-color: #e7eff9;
 background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
-    
+ }   
 
 
+
+
+.titulo {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
-
 .texto-inicio {
-    font-size: 1.5em;
-    color: black;
-    padding: 10px;
-    margin: 10px;
+    @include espacio(10px, 10px);
+    font-size: map-get($estilo, fuente);
+    color: map-get($estilo, color1);
     font-family: 'Merriweather', serif;
 }
 
@@ -24,7 +42,7 @@ background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
     .content {
         max-width: 650px;
         margin: 0 auto;
-        text-align: center;
+        text-align: map-get($estilo, centrar);
         position: relative;
         z-index: 2;
 
@@ -32,7 +50,7 @@ background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
             min-height: 50px;
             border-radius: 0;
             background: #243c4f;
-            color: #fff;
+            color: map-get($estilo, color2);
             font-weight: 600;
         }
 
@@ -44,7 +62,7 @@ background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
 
     .form-control {
         height: 50px;
-        border-color: #ffffff;
+        border-color: map-get($estilo, color2);
         border-radius: 0;
 
         &:focus {
@@ -56,16 +74,15 @@ background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
 
 .ubicacion-txt {
     text-transform: uppercase;
-    color: black;
+    color: map-get($estilo, color1);
     font-family: 'Merriweather', serif;
-    text-align: center;
+    text-align: map-get($estilo, centrar);
     margin-top: 10%;
   
 }
 
 .ubicacion {
-    padding: 10px;
-    margin: 10px;
+    @include espacio(10px,10px);
 }
 
 
@@ -73,19 +90,15 @@ background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
 /*-----nosotros-----*/
 
 .texto-nosotros {
-    font-size: 1.5em;
-    margin: 10px;
-    padding: 10px;
+    @include espacio(10px,10px);
+    font-size: map-get($estilo, fuente);
     display: block;
-    justify-content: center;
+    justify-content:map-get($estilo, centrar);
     font-family: 'Merriweather', serif;
 }
 
 .titulo-historia {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    text-transform: uppercase;
+    @extend .titulo;
 }
 
 img {
@@ -112,10 +125,8 @@ img {
 /*-----contacto-----*/
 
 .titulo-form {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 20px;
-    padding: 20px;
+    @extend .titulo;
+    @include espacio(20px,20px);
 }
 
 .mb-3 {
@@ -126,10 +137,9 @@ img {
 /*----tienda----*/
 
 .txt-tienda {
-    margin: 10px;
-    padding: 10px;
+    @include espacio(10px,10px);
     text-align: center;
-    font-size: large;
+    font-size: 1.5em;
 
     h1 {
         text-transform: capitalize;
@@ -145,21 +155,16 @@ img {
 
 .menu-texto {
     h1 {
-        text-transform: uppercase;
-        text-align: center;
-        padding: 10px;
-        margin: 10px;
-        font-size: 3em;
+        @extend .titulo;
+        font-size: map-get($estilo, titulo);
         font-family: 'Merriweather', serif;
         color: black;
 
     }
 
     p {
-        text-align: center;
+        @extend .titulo;
         font-family: 'Merriweather', serif;
-        padding: 10px;
-        margin: 10px;
         font-size: 1em;
     }
 }
@@ -167,13 +172,10 @@ img {
 .menu-imagenes {
     align-items: center;
 
-    ;
+    
 
     h2 {
-        text-align: center;
-        padding: 10px;
-        margin: 10px;
-        text-transform: uppercase;
+        @extend .titulo;
         color: black;
     }
 
