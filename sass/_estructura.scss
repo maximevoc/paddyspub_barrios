@@ -172,7 +172,10 @@ img {
 .menu-imagenes {
     align-items: center;
 
-    
+    img {
+        margin: 10px;
+        padding: 10px;
+    }
 
     h2 {
         @extend .titulo;

@@ -143,6 +143,11 @@ img {
           align-items: center;
 }
 
+.menu-imagenes img {
+  margin: 10px;
+  padding: 10px;
+}
+
 .menu-imagenes h2 {
   color: black;
 }
